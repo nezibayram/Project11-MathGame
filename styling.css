@@ -1,0 +1,189 @@
+/*styling.css*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #19044d;
+    font-family: "Roboto", sans-serif;
+}
+
+#container{
+    height: 500px;
+    width: 550px;
+    background-color: #340c9a;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 12px 20px white;
+    -moz-box-shadow: 0 12px 20px white;
+    -webkit-box-shadow: 0 12px 20px white;
+    position: relative;
+}
+
+#score{
+    background-color: wheat;
+    color: #220f01;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    padding: 11px;
+    position: absolute;
+    left: 500px;
+    box-shadow: 0 5px 10px rgb(134, 139, 234);
+}
+
+#correct{
+    position: absolute;
+    left: 260px;
+    background-color: #42e252;
+    color: black;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 11px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 250px;
+    background-color: #de401a;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 11px;
+    display: none;
+}
+
+#question{
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    margin-bottom: 30px;
+    background-color: wheat;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgb(238, 206, 146);
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+
+#instruction{
+    width: 450px;
+    height: 50px;
+    color: wheat;
+    background-color:#3d1f88 ;
+    border-radius: 1rem;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 45px;
+    box-shadow: 0px 10px 20px #f0a670;
+}
+
+#choices{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+    margin-bottom: 30px;
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: wheat;
+    font-size: 1.5rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 36px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #f0a670;
+    -moz-box-shadow: 0px 10px 20px #f0a670;
+    -webkit-box-shadow: 0px 10px 20px #f0a670;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover, #startreset:hover{
+   background-color: #3b1f84;
+   color: white;
+    box-shadow:  0px 0px #f1a066;
+    -moz-box-shadow: 0px 0px #f1a066;
+   -webkit-box-shadow:  0px 0px #f1a066;
+}
+
+.box:active, #startreset:active{
+    background-color: #220f01;
+    color: white;
+    box-shadow: 0px 0px #fa6c07; 
+    -moz-box-shadow:  0px 0px #fa6c07;
+    -webkit-box-shadow:  0px 0px #fa6c07; 
+    top: 4px;
+}
+#box4{
+    margin-right: 0;   
+}
+
+#startreset{
+    width: 78px;
+    padding: 10px;
+    background-color: #0e012f;
+    color: wheat;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #fa6c07; 
+    -moz-box-shadow:  0px 10px 20px #fa6c07;
+    -webkit-box-shadow:  0px 10px 20px #fa6c07; 
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;   
+}
+
+#timeremaining{
+    width: 170px;
+    padding: 10px;
+    position: absolute;
+    top: 490px;
+    left: 400px;
+    background-color: #19044d;
+    box-shadow: 0px 10px 20px #f0a670;
+    color: wheat;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+#gameOver{
+    height: 200px;
+    width: 500px;
+    border-radius: 15px;
+    background: linear-gradient(#fa6c07, #19044d);
+    background: -webkit-linear-gradient(#fa6c07,  #19044d);
+    background: -o-linear-gradient(#fa6c07,  #19044d);
+    background: -moz-linear-gradient(#fa6c07,  #19044d);
+    color: wheat;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+    
+}
